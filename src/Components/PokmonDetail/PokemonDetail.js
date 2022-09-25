@@ -38,49 +38,43 @@ const PokemonDetail = () => {
     
     return (
         <>
-        <div className="container" >
-            <div id="go-back" className="row ">
-                <div className="col-12 d-flex justify-content-center mb-4">
-                <Button href="/">Go back</Button> 
+            <div className="container" >
+                <div id="go-back" className="row ">
+                    <div className="col-12 d-flex justify-content-center mb-4">
+                    <Button href="/">Go back</Button> 
+                    </div>
+                    <hr className="mb-4"></hr>
                 </div>
-                <hr className="mb-4"></hr>
             </div>
-        </div>
-        
-        
- 
-              
+   
             {pokemon.map((item , index) => (
                 
-         <div className="container" key={index}>
-         <div className="poke-wrapper" > 
-                <div  id="poke-title" className="row " >
-                    <div className="col-12">
-                        <h2 className = "poke-name h1 text-capitalize mb-4" >{item.name}</h2>
+            <div className="container" key={index}>
+                <div className="poke-wrapper" > 
+                    <div id="poke-title" className="row " >
+                        <div className="col-12">
+                            <h2 className = "poke-name h1 text-capitalize mb-4" >{item.name}</h2>
+                        </div>
                     </div>
-                </div>
-                <div id="poke-card" className="row" key={item.id}>
-                    <div className="col-md-4">
-                    
-                    <div className="poke-front-img pb-5 mb-4">
-                        <img className="w-100" src={item.sprites.other.home.front_default} alt={item.name} />
-                    </div>
+                    <div id="poke-card" className="row" key={item.id}>
+                        <div className="col-md-4">
+                        
+                        <div className="poke-front-img pb-5 mb-4">
+                            <img className="w-100" src={item.sprites.other.home.front_default} alt={item.name} />
+                        </div>
 
-                    </div>
-                    <div className="col-md-8 ps-md-5">
-                        <div className="poke-info">
-                            <About pokemon={pokemon} />    
-                            <Stats pokemon={pokemon} />                            
+                        </div>
+                        <div className="col-md-8 ps-md-5">
+                            <div className="poke-info">
+                                <About pokemon={pokemon} />    
+                                <Stats pokemon={pokemon} />                            
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
+            </div>
                
             ))}
-               
-            
-      
         </>
     )
 }

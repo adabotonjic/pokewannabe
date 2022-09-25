@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,8 +35,8 @@
   to {
     transform: rotate(360deg);
   }
-}
-/***  My styles   ***/
+} */
+/*** PokeApp WannaBe Styles   ***/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 
 :root {

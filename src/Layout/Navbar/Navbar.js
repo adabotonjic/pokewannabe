@@ -10,24 +10,15 @@ const NavBar = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">
-                      
-                        
-                       
-                        <Link to = '/' className = "navbar-brand">
-                            <h1 className="entry-title">PokeApp WannaBe</h1>  
-                            <PokemonIconAlt className = "navbar-icon" size="150px"/>
-                        </Link>
-                       
-                       
+                            <Link to = '/' className = "navbar-brand">
+                                <h1 className="entry-title">PokeApp WannaBe</h1>  
+                                <PokemonIconAlt className = "navbar-icon" size="150px"/>
+                            </Link>
                        </div>
                     </div>
-                  
                 </div>
-                
-                 
             </nav>
-            
+
         )
-    
 }
 export default NavBar;

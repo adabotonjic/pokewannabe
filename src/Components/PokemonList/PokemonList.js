@@ -60,7 +60,6 @@ const PokemonList = () => {
 
   return (
     <div className="PokemonList">
-      
 
       <div className="container">
         <div className="row">
@@ -76,8 +75,6 @@ const PokemonList = () => {
             </div>
             <hr className="mb-4"></hr>
 
-
-
           {data.filter((pokemon) => {
               if (searchInput === "") {
                   return pokemon
@@ -88,8 +85,6 @@ const PokemonList = () => {
           }).map((pokemon, index) => (
           
             <div className="col-sm-6 col-md-4 col-xl-3" key={index}  >
-
-                
                   <div className="card text-center py-3 py-lg-4 px-3 mb-4"  >
                     <a className="text-decoration-none" href={'/pokemon/' + pokemon.id} title={pokemon.name}>
                         <p className="card-id mb-2">#{pokemon.id}</p>
@@ -97,17 +92,14 @@ const PokemonList = () => {
                         <h2 className="card-name text-capitalize mb-0"> {pokemon.name} </h2>
                       </a>
                   </div>
-          
-               
-       
             </div>
-
         )
 
         )}
         {isLoading && <p className="h1">{message}</p>}
         </div>
-    </div>
+      </div>
+
     </div>
    
   );
