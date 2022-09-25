@@ -61,7 +61,7 @@ const PokemonDetail = () => {
                     <div className="col-md-4">
                     
                     <div className="poke-front-img pb-5 mb-4">
-                        <img class="w-100" src={item.sprites.other.home.front_default} alt={item.name} />
+                        <img className="w-100" src={item.sprites.other.home.front_default} alt={item.name} />
                     </div>
 
                     </div>

@@ -90,7 +90,7 @@ const PokemonList = () => {
             <div className="col-sm-6 col-md-4 col-xl-3">
 
                 
-                  <div className="card text-center py-3 py-lg-4 px-3 mb-4" key={"num" + index}  >
+                  <div className="card text-center py-3 py-lg-4 px-3 mb-4" key={index}  >
                     <a className="text-decoration-none" href={'/pokemon/' + pokemon.id} title={pokemon.name}>
                         <p className="card-id mb-2">#{pokemon.id}</p>
                         <img className="card-img mb-2" src={pokemon.sprite} width={120} height={120} alt={pokemon.name} />

@@ -10,7 +10,7 @@ const Stats = ({pokemon}) => {
             {pokemon.map(poke => (
                 <div key={poke.id} className="stats-container">
                     <h3 className='mb-4'><span className="text-capitalize">{poke.name}</span> stats</h3>
-                    <table class="table table-dark table-bordered">
+                    <table className="table table-dark table-bordered">
                           <thead>
                             <tr>
                             <th scope="col">Stat name</th>

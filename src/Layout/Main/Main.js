@@ -5,7 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 
 const Main = () => {
     return (
-        <main class="main mb-5">
+        <main className="main mb-5">
             <Routes>
                 
                 <Route path = '/' element={<PokemonList/>}/>
