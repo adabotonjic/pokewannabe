@@ -65,11 +65,11 @@ const PokemonList = () => {
       <div className="container">
         <div className="row">
           <div className="d-flex justify-content-center px-1 pb-0 mb-4">
-            <div class="form-group has-search">
-            <span class="fa fa-search form-control-feedback">
+            <div className="form-group has-search">
+            <span className="fa fa-search form-control-feedback">
                       <RiSearch2Line className="search-icon" />
                   </span>
-                    <input type="text" class="form-control"
+                    <input type="text" className="form-control"
                     onChange={event => {setSearchInput(event.target.value)}}
                     placeholder="Search for Pokemon" />
                 </div>
