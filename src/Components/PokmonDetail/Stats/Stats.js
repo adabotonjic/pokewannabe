@@ -7,8 +7,8 @@ const Stats = ({pokemon}) => {
     return (
         <div className="stats">
 
-            {pokemon.map(poke => (
-                <div key={poke.id} className="stats-container">
+            {pokemon.map((poke, index) => (
+                <div key={index} className="stats-container">
                     <h3 className='mb-4'><span className="text-capitalize">{poke.name}</span> stats</h3>
                     <table className="table table-dark table-bordered">
                           <thead>
@@ -21,7 +21,7 @@ const Stats = ({pokemon}) => {
                     {poke.stats.map((stat, index) => (
                    
                         
-                            <tr key = {index} className="detail-info">
+                            <tr key ={index} className="detail-info">
                                     
                                     <td>{stat.stat.name}</td>
                                     <td>{stat.base_stat}</td>

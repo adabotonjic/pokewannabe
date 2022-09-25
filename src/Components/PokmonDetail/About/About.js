@@ -6,9 +6,9 @@ const About = ({pokemon}) => {
 
             <div className="poke-about-info-container">
                
-                {pokemon.map(poke => (
+                {pokemon.map((poke, index) => (
   
-                    <div key={poke.id} className="about-info mb-5">
+                    <div key={index} className="about-info mb-5">
                         <h3>Details about <span className="text-capitalize">{poke.name}</span></h3>
                         <p className ="type">Type: {poke.types[0].type.name}</p>
                         <div className="info">

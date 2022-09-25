@@ -4,9 +4,9 @@ const Sprite = ({pokemon}) => {
     return (
             <>
                
-                {pokemon.map(poke => (
+                {pokemon.map((poke, index) => (
   
-                    <div key={poke.id} className="about-info">
+                    <div key={index} className="about-info">
                         <h2 >Details about <span className="text-capitalize">{poke.name}</span></h2>
                         <p className ="type">Type: {poke.types[0].type.name}</p>
                         <div className="info">

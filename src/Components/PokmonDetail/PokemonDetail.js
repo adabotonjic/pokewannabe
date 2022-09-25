@@ -38,21 +38,23 @@ const PokemonDetail = () => {
     
     return (
         <>
-        <div className="container">
+        <div className="container" >
             <div id="go-back" className="row ">
                 <div className="col-12 d-flex justify-content-center mb-4">
                 <Button href="/">Go back</Button> 
                 </div>
                 <hr className="mb-4"></hr>
             </div>
+        </div>
         
         
  
               
-            {pokemon.map(item => (
+            {pokemon.map((item , index) => (
                 
-         <>
-                <div  id="poke-title" className="row " key={item.id}>  
+         <div className="container" key={index}>
+         <div className="poke-wrapper" > 
+                <div  id="poke-title" className="row " >
                     <div className="col-12">
                         <h2 className = "poke-name h1 text-capitalize mb-4" >{item.name}</h2>
                     </div>
@@ -72,10 +74,12 @@ const PokemonDetail = () => {
                         </div>
                     </div>
                 </div>
-                </>
+                </div>
+                </div>
+               
             ))}
                
-            </div>
+            
       
         </>
     )
