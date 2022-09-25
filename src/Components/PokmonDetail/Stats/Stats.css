@@ -1,0 +1,7 @@
+.table>:not(caption)>*>*{
+    padding: 0.7rem 1rem;
+    font-weight:400;
+}
+.table th{
+    font-weight:500;
+}

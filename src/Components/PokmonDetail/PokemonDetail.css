@@ -1,0 +1,23 @@
+
+.btn-primary{
+    font-weight: 500;
+    padding: 0.6rem 1.75rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition:all 0.4s;
+}
+
+.btn-primary:where(:hover,:focus, :active, :link){
+    background-color: #ffde00 !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+#poke-title h2{
+    color:#ffde00;
+}
+
+.poke-front-img{
+    background: white;
+    border-radius: 6px;
+}
