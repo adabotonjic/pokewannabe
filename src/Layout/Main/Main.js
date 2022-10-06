@@ -6,12 +6,14 @@ import {Routes, Route} from 'react-router-dom'
 const Main = () => {
     return (
         <main className="main mb-5">
+          
             <Routes>
                 
                 <Route path = '/' element={<PokemonList/>}/>
                 <Route path = '/pokemon/:id' element={<PokemonDetail/>} />
 
             </Routes>
+       
         </main>
     )
 

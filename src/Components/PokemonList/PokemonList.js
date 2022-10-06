@@ -18,6 +18,7 @@ const fetchPokemonData = async (len) => {
       type: item.types[0].type.name
     };
   });
+  
 };
 
 const PokemonList = () => {
@@ -37,9 +38,10 @@ const PokemonList = () => {
       setLoading(false);
     };
     fetchData();
+   
   }, []);
 
-
+  console.log(data);
   window.onscroll = () => {
     if (data.length > 500) {
       setMessage("Reached end of the list!!");
@@ -54,8 +56,10 @@ const PokemonList = () => {
       fetchPokemonData(data.length).then((newPokemons) => {
         setData([...data, ...newPokemons]);
         setLoading(false);
+        
       });
     }
+    
   };
 
   return (
@@ -76,15 +80,17 @@ const PokemonList = () => {
             <hr className="mb-4"></hr>
 
           {data.filter((pokemon) => {
+            
               if (searchInput === "") {
                   return pokemon
+                  
               } else if (pokemon.name.toLowerCase().includes(searchInput.toLowerCase())){
                   return pokemon
               } 
               return false;
           }).map((pokemon, index) => (
-          
             <div className="col-sm-6 col-md-4 col-xl-3" key={index}  >
+              
                   <div className="card text-center py-3 py-lg-4 px-3 mb-4"  >
                     <a className="text-decoration-none" href={'/pokemon/' + pokemon.id} title={pokemon.name}>
                         <p className="card-id mb-2">#{pokemon.id}</p>
